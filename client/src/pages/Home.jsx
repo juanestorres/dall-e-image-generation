@@ -32,7 +32,7 @@ const Home = () => {
                 setAllPosts(result.data.reverse())
             }
         } catch (error) {
-            alert(error)
+            alert(`${error}. Please reload the page in a few seconds and it should work.`)
         }
         finally {
             setLoading(false);
